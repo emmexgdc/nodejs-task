@@ -31,6 +31,7 @@ jobs:
       - name: Build and Push Image
         run: |
           IMAGE=${{ env.REGISTRY }}/${{ secrets.REGISTRY_NAME }}/${{ env.IMAGE_NAME }}
+          echo "Using image name: $IMAGE"
           docker buildx build \
             --platform linux/amd64 \
             -t $IMAGE:${{ github.sha }} \
