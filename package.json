@@ -1,0 +1,16 @@
+{
+  "name": "task-api",
+  "version": "1.0.0",
+  "description": "Simple Task API for DevOps demonstration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["api", "tasks", "devops"],
+  "author": "Emmanuel",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

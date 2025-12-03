@@ -1,0 +1,43 @@
+# Dependencies
+node_modules
+npm-debug.log
+
+# Git
+.git
+.gitignore
+.github
+
+# Documentation
+README.md
+*.md
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# Terraform files
+terraform/
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Kubernetes files
+k8s/
+
+# Test files
+test/
+*.test.js
+
+# CI/CD
+.github/
