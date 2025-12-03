@@ -17,7 +17,7 @@ resource "digitalocean_kubernetes_cluster" "main" {
     node_count = var.node_count
   }
 
-  tags = ["task-api", "devops-interview"]
+  tags = ["nodejs-task", "devops-interview"]
 }
 
 resource "digitalocean_container_registry" "main" {

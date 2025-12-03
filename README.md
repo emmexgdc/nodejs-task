@@ -117,7 +117,3 @@ GitHub → GitHub Actions → DOCR → Kubernetes (DOKS)
 ## 👤 Author
 
 Nwogu Emmanuel
-
-##  License
-
-MIT

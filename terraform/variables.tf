@@ -25,7 +25,7 @@ variable "vpc_name" {
 variable "registry_name" {
   description = "Name of the container registry"
   type        = string
-  default     = "taskapi"
+  default     = "emmexnodejs"
   
   validation {
     condition     = can(regex("^[a-z0-9]+$", var.registry_name))
@@ -36,7 +36,7 @@ variable "registry_name" {
 variable "k8s_version" {
   description = "Kubernetes version"
   type        = string
-  default     = "1.28.2-do.0"
+  default     = "1.34.1-do.0"
 }
 
 variable "node_size" {

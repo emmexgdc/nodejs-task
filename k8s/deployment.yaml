@@ -22,9 +22,11 @@ spec:
         app: nodejs-task
         version: v1
     spec:
+      imagePullSecrets:
+        - name: registry-emmexnodejs
       containers:
       - name: nodejs-task
-        image: registry.digitalocean.com/REGISTRY_NAME/nodejs-task:latest
+        image: registry.digitalocean.com/emmexnodejs/nodejs-task:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
