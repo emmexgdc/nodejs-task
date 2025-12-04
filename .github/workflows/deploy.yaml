@@ -40,7 +40,7 @@ jobs:
 
       - name: Update deployment file with new image
         run: |
-          sed -i 's|registry.digitalocean.com/.*/task-api:.*|registry.digitalocean.com/'${{ secrets.REGISTRY_NAME }}'/task-api:'${{ github.sha }}'|' k8s/deployment.yaml
+          sed -i 's|registry.digitalocean.com/.*/nodejs-task:.*|registry.digitalocean.com/'${{ secrets.REGISTRY_NAME }}'/nodejs-task:'${{ github.sha }}'|' k8s/deployment.yaml
 
       - name: Save cluster kubeconfig
         run: doctl kubernetes cluster kubeconfig save ${{ secrets.CLUSTER_NAME }}
