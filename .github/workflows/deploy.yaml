@@ -53,6 +53,6 @@ jobs:
 
       - name: Verify deployment
         run: |
-          kubectl rollout status deployment/task-api -n task-api
-          kubectl get pods -n task-api
-          kubectl get service task-api-service -n task-api
+          kubectl rollout status deployment/nodejs-task -n nodejs-task
+          kubectl get pods -n nodejs-task
+          kubectl get service nodejs-task-service -n nodejs-task
